@@ -1,0 +1,55 @@
+<div class="mainContainer2">
+    <nav class="navbar navbar-light bg-light loginNavbar">
+        <a class="navbar-brand navTop">
+            <img src="images/logo1.png" class="navLogo d-inline-block align-top" alt="">
+            <span class="navbarTitle">iFeed</span>
+        </a>
+    </nav>
+    
+    <div class="errors">
+        {{#if errors}}
+        {{#each errors}}
+            <div class="animated fadeOut message">
+                {{msg}}            
+                <a href="#close" class="icon-remove"></a>
+            </div>
+        {{/each}}
+        {{/if}}
+
+        {{#if success_msg}}
+            <div class="animated fadeOut message">
+                {{success_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error_msg}}
+            <div class="animated fadeOut message">
+                {{error_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error}}
+            <div class="animated fadeOut message">
+                {{error}}
+            </div>
+        {{/if}}
+    </div>
+
+    <div class="loginContainer">
+        <form action="/preUserRegister" method="post">
+            <span class="loginHeading">iFeed Registration Form</span>
+            
+            <div class="registerDiv">
+                <div class="form-group emailForm">
+                   <label for="exampleInputEmail1" class="label">Email address</label>
+                   <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                   <label for="exampleInputPassword1" class="label">Password</label>
+                   <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+                </div>
+                <button type="submit" id="SubmitBtn" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

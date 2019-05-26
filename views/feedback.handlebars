@@ -1,0 +1,119 @@
+      <div class="mainContainer1">
+         <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand navTop">
+            <img src="images/logo1.png" class="navLogo d-inline-block align-top" alt="">
+            <span class="navbarTitle">iFeed</span>
+            </a>
+            <form action="/logOut" method="post">
+                <button type="submit" class="logoutBtn btn btn-outline-success">Logout</button>
+            </form>
+         </nav>
+          
+    <div class="errors">
+        {{#if errors}}
+        {{#each errors}}
+            <div class="animated fadeOut message">
+                {{msg}}            
+                <a href="#close" class="icon-remove"></a>
+            </div>
+        {{/each}}
+        {{/if}}
+
+        {{#if success_msg}}
+            <div class="animated fadeOut message">
+                {{success_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error_msg}}
+            <div class="animated fadeOut message">
+                {{error_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error}}
+            <div class="animated fadeOut message">
+                {{error}}
+            </div>
+        {{/if}}
+    </div>
+          
+
+         <p id="headText">Which feedback you wanna give?</p>
+         <form class="selectOption">
+            <section class="border1">
+               <div class="custom-control custom-radio">
+                  <input type="radio" class="radioSelect custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation1">Hostel Feedback</label>
+               </div>
+            </section>
+            <section class="border1">
+               <div class="custom-control custom-radio">
+                  <input type="radio" class="radioSelect custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation2">Hostel Mess Feedback</label>
+               </div>
+            </section>
+            <section class="border1">
+               <div class="custom-control custom-radio">
+                  <input type="radio" class="radioSelect custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation3">Teacher Feedback</label>
+               </div>
+            </section>
+            <section class="border1">
+               <div class="custom-control custom-radio">
+                  <input type="radio" class="radioSelect custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation4">Square One Feedback</label>
+               </div>
+            </section>
+            <button type="submit" class="submitBtn1 btn btn-lg btn-primary btn-block">Submit</button>
+<!--             data-toggle="modal" data-target="#exampleModal"-->
+         </form>
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">New Feedback</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <form class="feedbackForm" action="/feedback" method="post">
+                        <div class="form-group email">
+                           <label for="Email">Email address</label>
+                           <input type="email" class="form-control" id="Email" name="email" placeholder="name@example.com" value={{email}} required autofocus readonly>
+                        </div>
+                        <div id="feedbackType">
+                           <div class="form-group feedbackType">
+                              <label for="feedbackType">Feedback Type</label>
+                              <input type="text" class="form-control" id="feedbacktype" name="feedbacktype" value='{{feedbacktype}}' placeholder="Feedback Type" required readonly>
+                           </div>
+                           <div class="form-group rollno">
+                              <label for="rollno">University Roll No.</label>
+                              <input type="text" class="form-control" id="rollno" name="rollno" placeholder="Roll No." value={{rollno}} readonly>
+                           </div>
+                        </div>
+                        <div id="username">
+                           <div class="form-group username">
+                              <label for="userName">Username</label>
+                              <input type="text" class="form-control" id="userName" name="username" value={{username}} placeholder="Username" required readonly>
+                           </div>
+                           <div class="form-group branch">
+                              <label for="branch">Branch</label>
+                              <input type="text" class="form-control" id="branch" name="branch" placeholder="Branch" value={{branch}} required readonly>
+                           </div>
+                        </div>
+                        <div class="form-group feedbackArea">
+                           <label for="exampleFormControlTextarea1">Feedback: </label>
+                           <textarea class="form-control" required id="exampleFormControlTextarea1" name="feedback" rows="3" placeholder="Min Length: 10 Words."></textarea>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>

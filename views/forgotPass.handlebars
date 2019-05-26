@@ -1,0 +1,50 @@
+<div class="mainContainer4">
+    <nav class="navbar navbar-light bg-light loginNavbar">
+        <a class="navbar-brand navTop">
+            <img src="/images/logo1.png" class="navLogo d-inline-block align-top" alt="">
+            <span class="navbarTitle">iFeed</span>
+        </a>
+    </nav>
+    
+    <div class="errors">
+        {{#if errors}}
+        {{#each errors}}
+            <div class="animated fadeOut message1">
+                {{msg}}            
+                <a href="#close" class="icon-remove"></a>
+            </div>
+        {{/each}}
+        {{/if}}
+
+        {{#if success_msg}}
+            <div class="animated fadeOut message1">
+                {{success_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error_msg}}
+            <div class="animated fadeOut message1">
+                {{error_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error}}
+            <div class="animated fadeOut message1">
+                {{error}}
+            </div>
+        {{/if}}
+    </div>
+
+    <div class="forgotPassContainer">
+        <form class="loginForm" action="/verifyForgotEmail" method="post">
+            <span class="forgotPassHeading">iFeed ForgotPassword Form</span>
+
+            <div class="form-group forgotPassEmailForm">
+               <label for="exampleInputEmail1" class="label">Email address</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" id="SubmitBtn" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+

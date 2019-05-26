@@ -1,0 +1,58 @@
+<div class="mainContainer4">
+    <nav class="navbar navbar-light bg-light loginNavbar">
+        <a class="navbar-brand navTop">
+            <img src="/images/logo1.png" class="navLogo d-inline-block align-top" alt="">
+            <span class="navbarTitle">iFeed</span>
+        </a>
+    </nav>
+    
+    <div class="errors">
+        {{#if errors}}
+        {{#each errors}}
+            <div class="animated fadeOut message">
+                {{msg}}            
+                <a href="#close" class="icon-remove"></a>
+            </div>
+        {{/each}}
+        {{/if}}
+
+        {{#if success_msg}}
+            <div class="animated fadeOut message">
+                {{success_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error_msg}}
+            <div class="animated fadeOut message">
+                {{error_msg}}
+            </div>
+        {{/if}}
+
+        {{#if error}}
+            <div class="animated fadeOut message">
+                {{error}}
+            </div>
+        {{/if}}
+    </div>
+
+    <div class="changePassContainer">
+        <form class="loginForm" action="/changePassword" method="post">
+            <span class="forgotPassHeading">iFeed ForgotPassword Form</span>
+            
+            <div class="form-group forgotPassEmailForm">
+               <label for="exampleInputEmail1" class="label">Email address</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" name="email" readonly value={{email}}>
+            </div>
+            <div class="form-group">
+               <label for="exampleInputPassword1" class="label">New Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword1" name="newPassword" placeholder="New Password">
+            </div>
+            <div class="form-group">
+               <label for="exampleInputPassword2" class="label">Confirm Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword2" name="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" id="SubmitBtn" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+

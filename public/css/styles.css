@@ -1,0 +1,544 @@
+body{
+    margin: 0;
+}
+
+.mainContainer{
+    background-color: lightgrey;
+}
+
+.mainContainer1{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: #F0F0F0;
+    height: 80px;
+/*    width: 98.8vw;*/
+    margin-bottom: 0px;
+}
+
+.loginNavbar{
+    height: 60px;
+}
+
+.navTop{
+    display: flex;
+    margin-left: 15px;
+}
+
+.navbarTitle{
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.navLogo{
+    width: 50px;
+    height: 50px;
+}
+
+.signUpBtn,.logoutBtn{
+    float: right;
+    margin-right: 50px;
+/*    margin-top: 11px;*/
+}
+
+.signUpBtn:hover{
+    background-color: #218838;
+}
+
+#passKeyDiv{
+    display: none;
+}
+
+.main{
+    width: 99vw;
+    height: 100vh;
+    background-image: url("../images/login-back.png");
+    background-size: cover;
+    opacity: .9;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    margin-left: 47vw;
+    margin-top: 20vh;
+}
+
+#heading{
+    margin-left: 16vw;
+    margin-top: 10vh;
+    width: 70vw;
+    text-align: center;
+}
+
+#mainHeading{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+#secondaryHeading{
+    font-size: 19px;
+    color: white;
+    line-height: 22px;
+    font-weight: 100;
+}
+
+.messSection{
+    width: 95vw;
+    height: 55vh;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.messImage{
+    width: 40vw;
+    height: 40vh;
+    margin-left: 20px;
+    order: 1;
+}
+
+.messContent{
+    width: 45vw;
+    margin-left: 80px;
+    margin-top: 70px;
+    order: 2;
+}
+
+.hostelSection{
+    width: 90vw;
+    height: 55vh;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 80px;
+    flex-wrap: wrap;
+}
+
+.hostelImage{
+    width: 40vw;
+    height: 40vh;
+    margin-left: 0px;
+    order: 2;
+}
+
+.hostelContent{
+    width: 45vw;
+    margin-left: 50px;
+    margin-top: 70px;
+    order: 1;
+}
+
+.head{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.subHead{
+    width: 39vw;
+}
+
+.selectOption{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.radioSelect{
+    border: 1px solid lightgrey;
+}
+
+.border1{
+    margin-top:20px; 
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 45vw;
+    text-align: center;
+}
+
+.submitBtn1{
+    margin-top: 30px;
+}
+
+#headText{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    padding-left: 60px;
+}
+
+.modal-header{
+    background-color: #5a6268;
+    color: white;
+}
+
+.close{
+    color: white;
+}
+
+.email,.feedbackArea{
+    margin-left: 5%;
+    width: 91%;
+}
+
+#feedbackType,#username{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#id,#dept{
+    display: none;
+}
+
+.feedbackType,.rollno,.username,.branch{
+    width: 43%;
+    margin-left: 5%;
+}
+
+.commentsContainer{
+    order: 1;
+    margin-left: 100px;
+    padding-top: 40px;
+}
+
+#commentsHeading{
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+#chart_div{
+    order: 2;
+    margin-top: 10vh;
+}
+
+.fa-quote-left{
+    
+}
+
+.fa-quote-right{
+    padding-left: 165px;
+}
+
+blockquote {
+    border-left: 5px solid cadetblue;
+    color: cadetblue;
+    font-style: italic;
+    margin: 30px 0 0px 15px;
+    padding-left: 45px;
+}
+
+.quotesBackgroundImage {
+    background: url("../images/bg-quote2.png");
+    margin: 0px 20px 20px;
+    padding: 30px;
+    background-repeat: no-repeat;
+}
+
+.comments{
+    width: 700px;
+    height: auto;
+    margin: 38px 0px 20px 50px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.12);
+    z-index: 1;
+}
+
+.feedbacktype{
+    font-size: 23px;
+    font-weight: 400;
+    padding-left: 20px;
+    color: cadetblue;
+}
+
+.commentText{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.header{
+    display: flex;
+}
+
+.sortByButton{
+    height: 35px;
+    margin-left: 25vw;
+    margin-top: 10vh;
+}
+
+.commentsHeader{
+    display: flex;
+}
+
+.badge{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.noFeedback{
+    width: 700px;
+    height: auto;
+    margin: 38px 0px 20px 50px;
+    padding: 10px 10px 10px 10px;
+    font-size: 34px;
+    text-align: center;
+}
+
+hr{
+    height: 10px;
+    width: 55vw;
+    margin-left: 12px;
+}
+
+.commentflexSection{
+    display: flex;
+}
+
+.mainContainer2,.mainContainer3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/loginBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;  
+}
+
+.mainContainer4{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/backForgot.PNG');
+    background-size: cover;
+}
+
+.mainContainer3{
+    height: 100vh;
+}
+
+.loginContainer,.profileContainer,.changePassContainer{
+    width: 35vw;
+    height: auto;
+    margin-left: 15vw;
+    padding: 40px 40px 50px 40px;
+    position: relative;
+    top: 15vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 0px 13px 1px #474544;
+    z-index: 9999;
+}
+
+.forgotPassContainer{
+    width: 35vw;
+    height: 56vh;
+    margin: auto;
+    margin-top: 30vh;
+    position: absolute;
+    padding: 50px 40px 50px 40px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    box-shadow: 0px 0px 13px 1px #474544;
+    z-index: 9999;
+}
+
+.profileContainer{
+    height: auto;
+    top: 5vh;
+}
+
+.changePassContainer{
+    top: 10vh;
+    margin-left: 30vw;
+}
+
+.loginContainer:hover,.forgotPassContainer:hover,.changePassContainer{
+    box-shadow: 2px 2px 23px 5px #474544;
+}
+
+.registerDiv{
+    margin-top: 50px;
+}
+
+.loginHeading,.forgotPassHeading{
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0vh;
+    color: gainsboro;
+}
+
+.forgotPassHeading{
+    font-size: 30px;
+}
+
+.forgotPassEmailForm{
+    margin-top: 50px;
+}
+
+.errors{
+    position: absolute;
+}
+
+.message,.message1{
+    position: relative;
+    width: 35vw;
+    margin-left: 15vw;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0 0 20px 0 black;
+    color: gainsboro;
+    text-align: center; 
+    margin-top: 10px;
+    -moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+.message1{
+    margin-left: 32vw;
+}
+
+.newFeedback{
+    -moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+.label{
+    color: gainsboro;
+}
+
+.labelName{
+    font-size: 18px; 
+}
+
+.radioHeader{
+    display: flex;
+    margin-top: 30px;
+}
+
+.emailForm{
+    margin-top: 20px;
+}
+
+#SubmitBtn{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#SubmitBtn:hover{
+    background: rgba(0,0,0,.5);
+}
+
+.radioButton{
+    width: 50%;
+    margin-left: 4vw;
+}
+
+.loginLinks{
+    margin-top: 10px;
+    text-align: center
+}
+
+#registerLink{
+    width: 20%;
+/*    margin-left: 85px;*/
+}
+
+#forgotPass{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.countInfo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.count{
+    background-color: lightgrey;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+.county{
+    font-weight: bold;
+}
+
+.fullPage{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+#forgotPass{
+    float: right;
+*/
+}
+
+@media only screen and (max-width: 1000px) {
+    .messSection,.hostelSection{
+        margin-left: 20vw;
+        
+    }
+    .messImage{
+        width: 50vw;
+        margin-left: 20px;
+    }
+    .hostelImage{
+        width: 50vw;
+        margin-top: 100px;
+        margin-left: 30px;
+        order: 1;
+    }
+    .hostelContent{
+        order: 2;
+        width: 100vw;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .messContent{
+        width: 100vw;
+        margin-left: 10px;
+        margin-top: 10px;
+        order: 2;
+    }
+    .head{
+        width: 100vw;
+    }
+    .subHead{
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .commentsContainer{
+        width: 80vw;
+        margin-left: 47px;
+    }
+    .comments{
+        width: 70vw;
+    }
+    hr{
+        width: 80vw;
+    }
+    .commentsText{
+        font-size: 15px;
+    }
+    .feedbacktype{
+        font-size: 18px;
+    }
+}
+
+

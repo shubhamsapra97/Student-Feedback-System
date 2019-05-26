@@ -1,0 +1,47 @@
+{
+  "name": "student-feedback-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.1.2",
+    "express3-handlebars": "^0.5.2",
+    "hbs": "^4.0.1",
+    "install": "^0.10.2",
+    "joi": "^13.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^5.5.11",
+    "nodemailer": "^6.2.1",
+    "nodemailer-mailgun-transport": "^1.4.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "randomstring": "^1.1.5",
+    "validator": "^9.1.1"
+  },
+  "engines": {
+    "node": "7.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamsapra97/Student-Feedback-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamsapra97/Student-Feedback-System/issues"
+  },
+  "homepage": "https://github.com/shubhamsapra97/Student-Feedback-System#readme"
+}

@@ -1,0 +1,74 @@
+<div class="mainContainer1">
+     <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand navTop">
+            <img src="images/logo1.png" class="navLogo d-inline-block align-top" alt="">
+            <span class="navbarTitle">iFeed</span>
+        </a>
+        <form action="/logOut" method="post">
+            <button type="submit" class="logoutBtn btn btn-outline-success">Logout</button>
+        </form>
+     </nav>
+    <div class="fullPage">
+        <div class="commentsContainer">
+
+            <div class="header">
+                <div>
+                    <blockquote>
+                        <div><i class="fas fa-quote-left"></i></div>
+                        <span id="commentsHeading">Comments</span>
+                        <div><i class="fas fa-quote-right"></i></div>
+                    </blockquote>
+                </div>
+                <div class="btn-group sortByButton">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filter
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/comments/All Feedback">All Feedbacks</a>
+                    <a class="dropdown-item" href="/comments/Hostel Feedback">Hostel Feedback</a>
+                    <a class="dropdown-item" href="/comments/Hostel Mess Feedback">Hostel Mess Feedback</a>
+                    <a class="dropdown-item" href="/comments/Teacher Feedback">Teacher Feedback</a>
+                    <a class="dropdown-item" href="/comments/Square One Feedback">Square One Feedback</a>
+                  </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="countInfo">
+                {{#if countInfo}}
+                {{#each countInfo}}
+                    <div class="count">
+                        {{typo}}: <span class="county">{{county}}</span>
+                    </div>
+                {{/each}}
+                {{/if}}
+            </div>
+            <div class="commentsSection">
+                {{#if comments}}
+                {{#each comments}}
+                    <div class="comments">
+                        <div class="commentsHeader">
+                            <div class="feedbacktype">{{feedbacktype}}</div>
+                            {{#if read}}
+                                <div class="animated fadeOut newFeedback"><span class="badge badge-pill badge-success">NEW</span></div>
+                            {{/if}}
+                        </div>
+                        <div class="commentflexSection">
+                            <div class="quotesBackgroundImage"></div>
+                            <div class="commentText">{{feedback}}</div>
+                        </div>
+                    </div>
+                {{/each}}
+                {{else}}
+                    <div class="noFeedback">
+                        <span>No Feedback available</span>
+                    </div>
+                {{/if}}
+            </div>
+
+        </div>
+        
+        <div id="chart_div"></div>
+
+    </div>
+</div>
