@@ -23,7 +23,7 @@ var {Feedback} = require('./models/feedback.js');
 var {countFeedback} = require('./models/countFeedback.js');
 
 mongoose.Promise = global.Promise;
-var uri = '*********';
+var uri = 'mongodb://shubham:Shubham%4025@ds147459.mlab.com:47459/student-feedback'; 
 mongoose.connect(uri,   
     { useNewUrlParser: true },
     function(error) {
