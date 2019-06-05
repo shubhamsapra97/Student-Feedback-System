@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const transport = nodemailer.createTransport({
     service: 'Mailgun',
     auth: {
-        user: "MAILGUN_USERNAME",
-        pass: 'MAILGUN_PASSWORD'
+        user: "shubhamsapra@sandboxfe6971d73458438db6dc93df1d672272.mailgun.org",
+        pass: 'Shubham@25'
     },
     secure: false,
     port: 25,
