@@ -19,3 +19,9 @@ This project is a dynamic Node.js application. It is built using Node.js Express
  2. Install the application using command: `npm install`
  3. Start your server: `node server/server.js`
  4. View in browser at `http://localhost:5000` 
+ 
+# Hosted App
+
+ 1. For email purposes Mailgun is used. I have used the sandbox in mailgun, so for sending mails, i need to first add the mails of the recipients. So, probably, this app may not work for you, as to create new user, your email needs to be verified.
+ 
+ Click here [Student Feedback System](https://hidden-dawn-40639.herokuapp.com/)
