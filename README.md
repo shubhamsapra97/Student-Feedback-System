@@ -25,12 +25,5 @@ This project is a dynamic Node.js application. It is built using Node.js Express
  1. For email purposes Mailgun is used. I have used the sandbox in mailgun, so for sending mails, i need to first add the mails of the recipients. So, probably, this app may not work for you, as to create new user, your email needs to be verified.
  
  2. Admin does not have to undergo the registration process. 
-    
-    Demo Admin Credentials:
-    
-    email: royalmax97@gmail.com
-    pass: 12345
-    
-    Enjoy :smile:
- 
+  
  Click here [Student Feedback System](https://hidden-dawn-40639.herokuapp.com/)
